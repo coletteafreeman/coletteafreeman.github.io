@@ -306,13 +306,14 @@ background-color: var(--purple-200);
 }
 
 h1 {
-    font-size: var(--fs-xxxl);
+    font-size: calc(var(--fs-xxxl) * 1.4);
     margin-top: 32px;
     margin-bottom: 16px;
     line-height: 1.2;
-    font-weight: normal;
+    font-weight: bold;
     letter-spacing: -3px;
-    color:--pink-600;
+    color:fuchsia;
+    font-family: var(--font-serif);
 }
 
 h2 {
@@ -320,7 +321,9 @@ h2 {
     line-height: 1.2;
     margin-bottom: 6px;
     letter-spacing: 1px;
-    color:--pink-600;
+    color:fuchsia;
+    font-family: var(--font-serif);
+    text-transform: uppercase;
 
     /* Apllies only to h2 inside header */
     header h2 { font-weight: normal; font-style: italic;}
