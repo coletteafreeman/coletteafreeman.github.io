@@ -98,8 +98,9 @@ body { background-color: lavenderblush; }
 h1 {
     font-size: calc(var(--fs-xxxl) * 1.3);
     line-height: 1.2;
-    font weight: normal;
-    text align: center;
+    font-family: var(--font-serif);
+    font weight: normal
+    text-align: center;
     letter-spacing: -3px;
     color:fuchsia;
 }
@@ -122,6 +123,7 @@ h3 {
     line-height: 1.2;
     font-family: var(--font-serif)
     color:fuchsia;
+
 }
 
 p {
