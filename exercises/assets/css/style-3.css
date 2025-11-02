@@ -301,29 +301,31 @@ section > * { max-width: 1600px }
 section > * { max-width: 1600px; margin-left: auto; margin-right: auto }
 
 /* ============= TYPOGRAPHY ============ */
-body { font-family: var(--font-serif) }
-background-color: var(--purple-200);
-}
+body { background-color: --lavenderblush; }
 
 h1 {
     font-size: calc(var(--fs-xxxl) * 1.4);
     margin-top: 32px;
     margin-bottom: 16px;
     line-height: 1.2;
-    font-weight: bold;
+    font-weight: normal;
     letter-spacing: -3px;
     color:fuchsia;
     font-family: var(--font-serif);
+    text-align: center;
 }
 
 h2 {
     font-size: var(--fs-xl);
     line-height: 1.2;
     margin-bottom: 6px;
-    letter-spacing: 1px;
+    letter-spacing: -1px;
     color:fuchsia;
     font-family: var(--font-serif);
     text-transform: uppercase;
+    text-align: center;
+    font-style: italic;
+    font-weight: normal;
 
     /* Apllies only to h2 inside header */
     header h2 { font-weight: normal; font-style: italic;}
