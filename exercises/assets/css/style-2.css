@@ -101,9 +101,9 @@ h1 {
     line-height: 1.2;
     font-family: var(--font-serif);
     font-weight: bold
-    text-align: center;
     letter-spacing: -3px;
-     color:fuchsia;
+    color:fuchsia;
+    text-align: center;
 }
 
 h2 {
