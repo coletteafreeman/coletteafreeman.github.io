@@ -252,9 +252,6 @@ input, button, textarea, select { font: inherit }
 /* ================= ENDS ================ */
 
 /* Web page */
-body { 
-    font-family: var(--global-font);
-}
 
 /* HEADER */
 header { 
@@ -276,7 +273,8 @@ h1 {
     line-height: 1.1;    
     margin-bottom: 30px;
     text-align: center;
-    letter-spacing: -2px
+    letter-spacing: -1px
+    font-family: "Oswald", sans serif;
 }
 
 header p { 
@@ -284,6 +282,7 @@ header p {
     color: var(--green-900) ;
     text-align: center;
     font-weight:bold
+    font-family: "Lato", sans serif;
 }
 
 /* SECTIONS */
@@ -305,6 +304,7 @@ h2 {
     line-height: 1.2;    
     margin-top: 42px;
     margin-bottom: 14px;
+    font-family: "Oswald", sans serif;
 }
 section h2:nth-child(1) { margin-top: 0 }
 
@@ -314,6 +314,7 @@ p {
     color: #000;
     line-height: 1.6;
     margin-bottom: 20px;
+    font-family: "Lato", sans serif;
 }
 img { margin-bottom: 24px; 
       border-radius: 25px
