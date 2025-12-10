@@ -310,7 +310,6 @@ h1 {
     line-height: 1.2;
     font-weight: normal;
     letter-spacing: -3px;
-    color:fuchsia;
     font-family: var(--font-serif);
     text-align: center;
 }
@@ -320,7 +319,6 @@ h2 {
     line-height: 1.2;
     margin-bottom: 6px;
     letter-spacing: -1px;
-    color:fuchsia;
     font-family: var(--font-serif);
     text-transform: uppercase;
     text-align: center;
@@ -342,3 +340,27 @@ p {
 }
 
 
+.section-1 {
+    background-color: lemonchiffon;
+}
+
+.section-2 {
+    background-color: lightgreen;
+}
+
+.section-3 {
+    background-color: lightblue;
+}
+
+.section-4 {
+    background-color: darkblue;
+}
+
+.section-4 h2,
+.section-4 p {
+color: white;
+}
+
+.section-5 {
+    background-color: lightcoral;
+}
