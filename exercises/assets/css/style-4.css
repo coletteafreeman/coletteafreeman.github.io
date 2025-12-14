@@ -333,8 +333,9 @@ p {
     margin-bottom: 16px;
     font-weight: 400
 } 
-{ image-bottom: 24px 
-box-shadow: 8px 10px 8px #888
+img{
+     image-bottom: 24px 
+     box-shadow: 8px 10px 8px #888;
 }
 
 /* ===== VIDEO ===== */
