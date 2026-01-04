@@ -209,3 +209,57 @@ body {
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
 }
+/* ===============================
+   Slimmer logo
+================================ */
+
+nav .brand img {
+    max-height: 42px;   /* try 36–48px to taste */
+    width: auto;
+}
+nav .container-menu {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
+nav .container-menu,
+nav .container-menu-links {
+    align-items: center;
+}
+nav .brand img {
+    max-height: 64px;
+    width: auto;
+}
+
+nav .container-menu {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
+
+nav .container-menu,
+nav .container-menu-links {
+    align-items: center;
+}
+nav .brand img {
+    transition: opacity 0.3s ease;
+}
+
+nav .brand img:hover {
+    opacity: 0.85;
+}
+nav .brand img {
+    max-height: 52px;   /* increase from 40px */
+    width: auto;
+}
+nav .brand img {
+    max-height: 52px;
+    width: auto;
+    image-rendering: auto;
+}
+/* ===============================
+   Nav logo – balanced with buttons
+================================ */
+
+nav .brand img {
+    max-height: 64px;   /* visually matches button height */
+    width: auto;
+}
