@@ -1,6 +1,211 @@
 
+/* 
+Palette:
+Rose Gold:   #c9a27e
+Soft Blush:  #f6e8df
+Charcoal:    #2b2b2b
+Warm Ivory:  #faf8f5
+Muted Sage:  #8fa89b
+*/
+/* ===============================
+   Global styles
+================================ */
+
 body {
-  background-color: #651f57;   /* white background */
-  color: #736161;              /* soft black text */
-  font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #faf8f5;
+    color: #2b2b2b;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #2b2b2b;
+}
+
+/* Links */
+a {
+    color: #c9a27e;
+}
+
+a:hover {
+    color: #8fa89b;
+}
+
+/* ===============================
+   Navigation
+================================ */
+
+nav.theme-light {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+}
+
+nav .links-wrapper li a {
+    color: #2b2b2b;
+}
+
+nav .links-wrapper li a:hover {
+    color: #c9a27e;
+}
+
+/* CTA button in nav */
+#btn-cta {
+    background-color: #c9a27e;
+    border-color: #c9a27e;
+    color: #ffffff;
+}
+
+#btn-cta:hover {
+    background-color: #b18a65;
+    border-color: #b18a65;
+}
+
+/* ===============================
+   Hero section
+================================ */
+
+header.theme-light {
+    background-color: #f6e8df;
+}
+
+header h1 {
+    color: #2b2b2b;
+}
+
+header h2 {
+    color: #555;
+}
+
+/* Welcome badge */
+.badge {
+    background-color: #c9a27e;
+    color: #ffffff;
+}
+
+/* ===============================
+   Buttons
+================================ */
+
+.btn-solid {
+    background-color: #c9a27e;
+    border-color: #c9a27e;
+    color: #ffffff;
+}
+
+.btn-solid:hover {
+    background-color: #b18a65;
+    border-color: #b18a65;
+}
+
+.btn-outline {
+    border-color: #c9a27e;
+    color: #c9a27e;
+}
+
+.btn-outline:hover {
+    background-color: #c9a27e;
+    color: #ffffff;
+}
+
+/* ===============================
+   Recent projects section
+================================ */
+
+section.theme-light {
+    background-color: #faf8f5;
+}
+
+.col-3 {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.col-3 h3 {
+    color: #2b2b2b;
+}
+
+.col-3 p {
+    color: #666;
+}
+
+/* Image hover polish */
+.photos-zoom img {
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.photos-zoom:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.05);
+}
+
+/* ===============================
+   Footer
+================================ */
+
+footer.theme-dark {
+    background-color: #2b2b2b;
+    color: #faf8f5;
+}
+
+footer h2,
+footer h3 {
+    color: #faf8f5;
+}
+
+.footer-links a {
+    color: #faf8f5;
+}
+
+.footer-links a:hover {
+    color: #c9a27e;
+}
+
+.footer-icons i {
+    color: #c9a27e;
+    font-size: 1.4rem;
+}
+
+.footer-icons i:hover {
+    color: #8fa89b;
+}
+
+footer .privacy a {
+    color: #8fa89b;
+}
+
+footer .privacy a:hover {
+    color: #c9a27e;
+}
+#faf8f5
+/* ===============================
+   Footer link colour override
+================================ */
+
+footer.theme-dark .footer-links a {
+    color: #faf8f5;
+}
+
+footer.theme-dark .footer-links a:hover {
+    color: #8fa89b; /* subtle sage hover */
+}
+
+/* Optional: privacy link */
+footer.theme-dark .privacy a {
+    color: #faf8f5;
+}
+
+footer.theme-dark .privacy a:hover {
+    color: #8fa89b;
+}
+/* ===============================
+   Google Fonts
+================================ */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
 }
