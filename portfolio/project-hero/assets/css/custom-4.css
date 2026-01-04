@@ -4,3 +4,10 @@
 
 
 /* =============== Add your custom CSS below =========== */
+header.theme-light { background-color: var(--trend-200) }
+header.theme-light .badge { background-color: var(--purple-700) }
+header h1 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: -4px;
+    font-weight: 400;
+}
