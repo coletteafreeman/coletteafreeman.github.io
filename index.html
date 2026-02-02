@@ -16,7 +16,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="assets/css/custom.css" />
 
 	<!-- Google Fonts -->
 
@@ -42,52 +41,238 @@
 
 
 <body>
+<!-- Announcement bar -->
+<div class="announcement-bar" aria-live="polite">
+  <p id="announcementText">
+    Free standard delivery on orders over €75
+  </p>
+</div>
+
 
     <!-- menu and 'hero block' header -->
-    <nav class="theme-light"><div class="container-menu">
-        <a href="#" class="brand">
-            <img src="assets/img/logo3.jpg" alt="Colette Freeman logo">
-        </a>
-    
-        <div class="container-menu-links">
-    
-            <div class="nav-toggle" id="nav-toggle-btn">
-                <div class="bar-1"></div>
-                <div class="bar-2"></div>
-                <div class="bar-3"></div>
-            </div>
-    
-            <ul class="links-wrapper">
-                <li><a href="#">Home</a></li>
-                <li><a href="portfolio/index.html">Portfolio</a></li>
-                <li><a href="store/index.html">Store</a></li>
-                <li><a class="btn btn-solid btn-soft" id="btn-cta" href="contact/index.html"><span>Contact</span> <i class="fa-regular fa-envelope"></i></a></li>
-            </ul>
-        </div></div></nav>
+    <nav class="theme-light">
+  <div class="container-menu nav-3col">
+
+    <!-- LEFT: Contact (where logo used to be) -->
+    <div class="nav-left">
+      <a class="btn btn-outline btn-soft nav-contact" href="contact/index.html" aria-label="Contact">
+        <span>Contact</span>
+        <i class="fa-regular fa-envelope"></i>
+      </a>
+    </div>
+
+    <!-- CENTER: Logo -->
+    <div class="nav-center">
+  <a href="index.html" class="brand brand-logo">
+    <img
+      src="assets/img/DCJ LOGO 2.png"
+      alt="David Cullen Jewellers"
+    >
+  </a>
+</div>
+
+
+    <!-- RIGHT: Store + icons + toggle -->
+    <div class="nav-right">
+
+      <div class="nav-toggle" id="nav-toggle-btn" aria-label="Menu">
+        <div class="bar-1"></div>
+        <div class="bar-2"></div>
+        <div class="bar-3"></div>
+      </div>
+
+      <ul class="links-wrapper">
+
+        <!-- Icons group (includes search for equal spacing) -->
+        <li class="nav-icons">
+  <div class="nav-icons-inner">
+
+    <!-- Menu -->
+    <button class="icon-link icon-btn-reset" id="megaMenuBtn" type="button"
+      aria-label="Open jewellery menu" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+      <span class="icon-label">Menu</span>
+    </button>
+
+    <!-- Search -->
+    <div class="search-wrap" id="searchWrap">
+      <button class="search-toggle" id="searchToggle" aria-label="Open search" type="button">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+
+      <form action="store/index.html" method="get" class="search-form-collapsible" id="searchForm" role="search">
+        <label class="sr-only" for="site-search">Search</label>
+        <input id="site-search" name="q" type="search" placeholder="Search products..." aria-label="Search products">
+        <button type="submit" class="search-submit" aria-label="Search">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </form>
+    </div>
+
+    <!-- Wishlist -->
+    <a href="store/wishlist.html" class="icon-link" aria-label="Wishlist">
+      <i class="fa-regular fa-heart"></i>
+      <span class="icon-badge" id="wishlist-count">0</span>
+      <span class="icon-label">Wishlist</span>
+    </a>
+
+    <!-- Account -->
+    <div class="account-wrap" id="accountWrap">
+      <button
+        class="icon-link icon-btn-reset account-btn"
+        id="accountBtn"
+        type="button"
+        aria-label="Account"
+        aria-expanded="false"
+        aria-controls="accountDropdown"
+      >
+        <i class="fa-regular fa-user"></i>
+        <span class="icon-label">Account</span>
+      </button>
+
+      <div class="account-dropdown" id="accountDropdown" role="menu" aria-hidden="true">
+        <a href="store/login.html" role="menuitem">Log in</a>
+        <a href="store/register.html" role="menuitem">Create account</a>
+      </div>
+    </div>
+
+    <!-- View Cart -->
+    <button class="icon-link icon-btn-reset" id="cartOpenBtn" type="button" aria-label="Open cart">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <span class="icon-badge" id="cart-count">0</span>
+      <span class="icon-label">View Cart</span>
+    </button>
+
+  </div>
+</li>
+      </ul>
+     </div>
+    </div>
+</nav>
+
+<section class="mega-menu" id="megaMenu" aria-hidden="true">
+  <div class="mega-inner">
+
+    <div class="mega-col">
+      <h4 class="mega-title">Shop by Type</h4>
+      <ul class="mega-links">
+        <li><a href="store/index.html#new-in">New In</a></li>
+        <li><a href="store/index.html#rings">Rings</a></li>
+        <li><a href="store/index.html#engagement">Engagement Rings</a></li>
+        <li><a href="store/index.html#wedding">Wedding Bands</a></li>
+        <li><a href="store/index.html#earrings">Earrings</a></li>
+      </ul>
+    </div>
+
+    <div class="mega-col">
+      <h4 class="mega-title">Collections</h4>
+      <ul class="mega-links">
+        <li><a href="store/index.html#necklaces">Necklaces</a></li>
+        <li><a href="store/index.html#bracelets">Bracelets</a></li>
+        <li><a href="store/index.html#watches">Watches</a></li>
+        <li><a href="store/index.html#gifts">Gifts</a></li>
+        <li><a href="store/index.html#sale">Sale</a></li>
+      </ul>
+    </div>
+
+    <a class="mega-feature" href="store/index.html#featured" aria-label="Featured collection">
+      <div class="mega-feature-inner">
+        <div class="mega-feature-kicker">Featured</div>
+        <div class="mega-feature-title">Rose Gold Essentials</div>
+        <div class="mega-feature-sub">A curated edit of timeless pieces.</div>
+        <div class="mega-feature-cta">Explore <i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- Overlay -->
+<div class="drawer-overlay" id="drawerOverlay" hidden></div>
+
+<!-- LEFT: Jewellery Menu Drawer -->
+
+<!-- RIGHT: Cart Drawer -->
+<aside class="drawer drawer-right" id="cartDrawer" aria-hidden="true">
+  <div class="drawer-header">
+    <h3 class="drawer-title">Your Cart</h3>
+    <button class="drawer-close" id="cartCloseBtn" type="button" aria-label="Close cart">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+
+  <div class="drawer-body">
+    <!-- Mock items (design-only) -->
+    <div class="cart-item">
+      <div class="cart-thumb"></div>
+      <div class="cart-info">
+        <div class="cart-name">Diamond Pendant</div>
+        <div class="cart-meta">18ct Gold • Qty 1</div>
+      </div>
+      <div class="cart-price">€1,250</div>
+    </div>
+
+    <div class="cart-item">
+      <div class="cart-thumb"></div>
+      <div class="cart-info">
+        <div class="cart-name">Pearl Stud Earrings</div>
+        <div class="cart-meta">Sterling Silver • Qty 1</div>
+      </div>
+      <div class="cart-price">€120</div>
+    </div>
+  </div>
+
+  <div class="drawer-footer">
+    <div class="cart-summary">
+      <span>Subtotal</span>
+      <strong id="cartSubtotal">€1,370</strong>
+    </div>
+
+    <div class="drawer-actions">
+  <a class="btn btn-solid btn-soft drawer-btn" href="store/checkout.html">Checkout</a>
+  <a class="btn btn-outline btn-soft drawer-btn" href="store/cart.html">View Cart</a>
+
+  <!-- Secondary actions -->
+  <a class="btn btn-outline btn-soft drawer-btn drawer-secondary" href="store/index.html">
+    Back to Shopping
+  </a>
+
+  <a class="btn btn-outline btn-soft drawer-btn drawer-secondary" href="store/wishlist.html">
+    View Wishlist
+  </a>
+</div>
+
+    <p class="drawer-note">Mockup drawer for design preview.</p>
+  </div>
+</aside>
+
     
            <!-- header starts here -->
     
-        <header class="theme-light cols-2-half text-center-mobile">
-    
-            <div class="col-2 col-text">
-                <div class="badge">A little introduction..</div>
-                <h1>Colette Freeman</h1>
-                <h2>As the Jewellery Stock Control and E-commerce Manager, I'm passionate about bringing the beauty of our collections to life - both behind the scenes and online. I manange everthing from stock coordination and product listings to the running of our online store , ensuring each piece finds it's way to the right customer.</h2>
-    
-                <div class="container-btn">
-                    <a href="portfolio/index.html" class="btn btn-solid btn-soft"><span>View my work</span><i class="fa-regular fa-folder-open"></i></a><a href="contact/index.html" class="btn btn-outline btn-soft"><span>Get in touch</span><i class="fa-regular fa-envelope"></i></a>
-                </div>
-    
-            </div>
-    
-            <div class="col-2 col-visual">
-                <figure>
-                    <img src="assets/img/diaomnd rose.jpg" alt="Placeholder image">
-                </figure>
-            </div>
-    
-        </header>
-    
+        <!-- HERO: Rotating images -->
+     <header class="hero-slider" aria-label="Featured promotions">
+
+     <div class="hero-slides" id="heroSlides">
+
+    <figure class="hero-slide is-active">
+      <img src="assets/img/SALE-HERO-IMAGE-JAN-2026-2.png" alt="Half price sale banner">
+    </figure>
+
+    <figure class="hero-slide">
+      <img src="assets/img/R546E-18Y-18ct-gold-lab-1.04-emerald-lab-50pts-diamond-cluster-ring-front-image.jpg" alt="Emerald and diamond cluster ring">
+    </figure>
+
+    <figure class="hero-slide">
+      <img src="assets/img/20-02-505-20-sterling-silver-7.5mm-20-inch-mens-curb-link-chain-wear-image.png" alt="Men’s curb link chain being worn">
+    </figure>
+
+    <figure class="hero-slide">
+      <img src="assets/img/test-product.jpg" alt="Jewellery inspection close-up">
+    </figure>
+
+  </div>
+
+</header>
     
         <!-- header ends here -->
     
@@ -168,7 +353,214 @@
 	</footer>
 
     <script src="https://lunevedy.com/assets/js/lunevedy.js"></script>
+ 
+<script>
+  // ===== Elements =====
+  const overlay = document.getElementById("drawerOverlay");
+
+  // Search
+  const searchWrap = document.getElementById("searchWrap");
+  const searchToggle = document.getElementById("searchToggle");
+  const searchInput = document.getElementById("site-search");
+
+  // Mega menu
+  const megaMenu = document.getElementById("megaMenu");
+  const megaMenuBtn = document.getElementById("megaMenuBtn");
+
+  // Cart drawer
+  const cartDrawer = document.getElementById("cartDrawer");
+  const cartOpenBtn = document.getElementById("cartOpenBtn");
+  const cartCloseBtn = document.getElementById("cartCloseBtn");
+
+  // Account dropdown
+  const accountWrap = document.getElementById("accountWrap");
+  const accountBtn = document.getElementById("accountBtn");
+  const accountDropdown = document.getElementById("accountDropdown");
+
+  // ===== Overlay helpers =====
+  function showOverlay() {
+    if (overlay) overlay.hidden = false;
+  }
+
+  function hideOverlayIfNothingOpen() {
+    const cartOpen = cartDrawer?.classList.contains("is-open");
+    const megaOpen = megaMenu?.classList.contains("is-open");
+    const accountOpen = accountWrap?.classList.contains("is-open");
+    if (!cartOpen && !megaOpen && !accountOpen && overlay) overlay.hidden = true;
+  }
+
+  // ===== Search =====
+  function openSearch() {
+    searchWrap?.classList.add("is-open");
+    setTimeout(() => searchInput?.focus(), 50);
+  }
+
+  function closeSearch() {
+    searchWrap?.classList.remove("is-open");
+    searchInput?.blur();
+  }
+
+  searchToggle?.addEventListener("click", (e) => {
+    e.preventDefault();
+    searchWrap?.classList.contains("is-open") ? closeSearch() : openSearch();
+  });
+
+  // ===== Account =====
+  function openAccount() {
+    // close other UI
+    closeMega();
+    closeCart();
+    closeSearch();
+
+    accountWrap?.classList.add("is-open");
+    accountBtn?.setAttribute("aria-expanded", "true");
+    accountDropdown?.setAttribute("aria-hidden", "false");
+    showOverlay();
+  }
+
+  function closeAccount() {
+    accountWrap?.classList.remove("is-open");
+    accountBtn?.setAttribute("aria-expanded", "false");
+    accountDropdown?.setAttribute("aria-hidden", "true");
+    hideOverlayIfNothingOpen();
+  }
+
+  function toggleAccount() {
+    accountWrap?.classList.contains("is-open") ? closeAccount() : openAccount();
+  }
+
+  accountBtn?.addEventListener("click", (e) => {
+    e.preventDefault();
+    toggleAccount();
+  });
+
+  // ===== Mega menu =====
+  function openMega() {
+    // close other UI
+    closeAccount();
+    closeCart();
+
+    megaMenu?.classList.add("is-open");
+    megaMenu?.setAttribute("aria-hidden", "false");
+    megaMenuBtn?.setAttribute("aria-expanded", "true");
+    showOverlay();
+  }
+
+  function closeMega() {
+    megaMenu?.classList.remove("is-open");
+    megaMenu?.setAttribute("aria-hidden", "true");
+    megaMenuBtn?.setAttribute("aria-expanded", "false");
+    hideOverlayIfNothingOpen();
+  }
+
+  megaMenuBtn?.addEventListener("click", (e) => {
+    e.preventDefault();
+    megaMenu?.classList.contains("is-open") ? closeMega() : openMega();
+  });
+
+  // ===== Cart =====
+  function openCart() {
+    // close other UI
+    closeMega();
+    closeAccount();
+
+    cartDrawer?.classList.add("is-open");
+    cartDrawer?.setAttribute("aria-hidden", "false");
+    document.body.classList.add("no-scroll");
+    showOverlay();
+  }
+
+  function closeCart() {
+    cartDrawer?.classList.remove("is-open");
+    cartDrawer?.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("no-scroll");
+    hideOverlayIfNothingOpen();
+  }
+
+  cartOpenBtn?.addEventListener("click", (e) => {
+    e.preventDefault();
+    openCart();
+  });
+
+  cartCloseBtn?.addEventListener("click", (e) => {
+    e.preventDefault();
+    closeCart();
+  });
+
+  // ===== Overlay closes everything =====
+  overlay?.addEventListener("click", () => {
+    closeMega();
+    closeCart();
+    closeAccount();
+  });
+
+  // ===== Escape closes everything =====
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      closeSearch();
+      closeMega();
+      closeCart();
+      closeAccount();
+    }
+  });
+
+  // ===== Click outside rules =====
+  document.addEventListener("click", (e) => {
+    const clickedSearch = searchWrap?.contains(e.target) || searchToggle?.contains(e.target);
+    const clickedMega = megaMenu?.contains(e.target) || megaMenuBtn?.contains(e.target);
+    const clickedCart = cartDrawer?.contains(e.target) || cartOpenBtn?.contains(e.target);
+    const clickedAccount = accountWrap?.contains(e.target) || accountBtn?.contains(e.target);
+
+    // Close search if clicking outside all header UI
+    if (!clickedSearch && !clickedMega && !clickedCart && !clickedAccount) closeSearch();
+
+    // Close account if clicking outside account + dropdown
+    if (!clickedAccount) closeAccount();
+
+    // Close mega if clicking outside mega + button (but not if interacting with cart/account)
+    if (!clickedMega && !clickedCart && !clickedAccount) closeMega();
+  });
+</script>
+
+<script>
+  const messages = [
+    "Free standard delivery on orders over €75",
+    "Free Click & Collect",
+    "Finance available at checkout",
+    "Our stores"
+  ];
+
+  const announcement = document.getElementById("announcementText");
+  let currentIndex = 0;
+
+  setInterval(() => {
+    announcement.classList.add("fade-out");
+
+    setTimeout(() => {
+      currentIndex = (currentIndex + 1) % messages.length;
+      announcement.textContent = messages[currentIndex];
+      announcement.classList.remove("fade-out");
+      announcement.classList.add("fade-in");
+    }, 300);
+
+  }, 4000);
+</script>
+
+<script>
+  // HERO slider
+  const slides = document.querySelectorAll("#heroSlides .hero-slide");
+  let slideIndex = 0;
+
+  function showSlide(i){
+    slides.forEach(s => s.classList.remove("is-active"));
+    slides[i].classList.add("is-active");
+  }
+
+  setInterval(() => {
+    slideIndex = (slideIndex + 1) % slides.length;
+    showSlide(slideIndex);
+  }, 4500); // change every 4.5 seconds
+</script>
 
 </body>
 </html>
-
